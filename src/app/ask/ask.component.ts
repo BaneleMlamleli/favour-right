@@ -10,12 +10,9 @@ import { Validators } from '@angular/forms';
 
 export class AskComponent implements OnInit {
   askForm = this.fb.group({
-    username: [{value: 'Dummy Name', 'disabled': true} ],
+    username: [{value: 'username', 'disabled': false} ],
     reward: [1],
     description: ['']
-   // firstName: ['check'],
-   // lastName: ['Samuel', Validators.required],
-   // password: ['']
   });
   localDes:  [[string]];
 
